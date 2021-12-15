@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+
 weight = pd.DataFrame([
     [76.4, 'kg'],
     [80, 'kg'],
@@ -8,4 +9,7 @@ weight = pd.DataFrame([
     [45.9, 'kg']
 ])
 
+
 print(weight)
+a = np.arange(5)
+print(a)
