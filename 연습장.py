@@ -1,15 +1,4 @@
-import numpy as np
-import pandas as pd
+n = 7
 
-
-weight = pd.DataFrame([
-    [76.4, 'kg'],
-    [80, 'kg'],
-    [55, 'kg'],
-    [45.9, 'kg']
-])
-
-
-print(weight)
-a = np.arange(5)
-print(a)
+for i in range(n):
+    print('*' * (i + 1))

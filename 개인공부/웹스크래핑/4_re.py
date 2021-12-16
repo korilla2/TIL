@@ -3,7 +3,7 @@ p = re.compile('ca.e')
 
 # . : 하나의 문자를 의미
 # ^ : 문자열의 시작 ^de  de로 시작함
-# & : 문자열의 끝 se&  se로 끝남
+# $ : 문자열의 끝 se$  se로 끝남
 
 
 def print_match(m):
