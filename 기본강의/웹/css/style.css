@@ -1,0 +1,55 @@
+html {
+  border: 3px dashed blue;
+  font-size: 16px;
+  font-family: "궁서체";
+}
+
+h2 {
+  color: violet;
+}
+
+.footer {
+  color: red;
+}
+
+.column1 > h2 {
+  color: red;
+}
+
+div {
+  color: #000000;
+  background-color: white;
+}
+
+.column3 {
+  border: 5px solid blue;
+  margin: 90px;
+  margin-top: 50px;
+
+  padding: 90px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.list {
+  display: inline-block;
+  position: fixed;
+  right: 800px;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+.container {
+  border: 1px dashed gray;
+}
+
+.span {
+  position: fixed;
+  right: 130px;
+}
