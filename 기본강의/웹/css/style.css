@@ -1,55 +1,89 @@
-html {
-  border: 3px dashed blue;
-  font-size: 16px;
-  font-family: "궁서체";
+header {
+  background-color: #006699;
+  color: #FFFFFF;
 }
 
-h2 {
-  color: violet;
-}
-
-.footer {
-  color: red;
-}
-
-.column1 > h2 {
-  color: red;
-}
-
-div {
-  color: #000000;
-  background-color: white;
-}
-
-.column3 {
-  border: 5px solid blue;
-  margin: 90px;
-  margin-top: 50px;
-
-  padding: 90px;
-  padding-top: 5px;
-  padding-right: 5px;
-}
-
-h1 {
-  display: inline-block;
+.title {
+  display: inline;
+  position: relative;
+  left: 10px;
 }
 
 .list {
-  display: inline-block;
-  position: fixed;
-  right: 800px;
+  display: inline;
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  text-align: right;
 }
 
 .list-item {
   display: inline-block;
+  /* inline 속성은 너비 속성을 가지지 않습니다 */
+  /* inline-block은 inline 속성이면서, block 속성을 같이 사용 */
+  width: 300px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .container {
-  border: 1px dashed gray;
+  position: relative;
+  border: 10px solid red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .span {
-  position: fixed;
-  right: 130px;
+  position: absolute;
+  color: violet;
+  top: 50px;
+  left: 230px;
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  border: 10px solid red;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 30%;
+  margin-left: 1.9%;
+  padding: 10px;
+  border: 10px solid red;
+}
+
+.column3 {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  border: 10px solid red;
+}
+
+.column4 {
+  float: left;
+  width: 47%;
+  margin-top: 50px;
+  padding: 10px;
+  border: 10px solid red;
+}
+
+.column5 {
+  float: right;
+  width: 47%;
+  margin-top: 50px;
+  padding: 10px;
+  border: 10px solid red
+}
+
+.footer {
+  clear: left;
+  margin-top: 800px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 10px solid red;
 }
