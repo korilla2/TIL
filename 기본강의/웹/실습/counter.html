@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <h2 id='number'>0</h2>
+    <div>
+        <button id='increase'>1</button>
+        <button id='decrease'>-1</button>
+    </div>
+    <script type='text/javascript'>
+        let number = document.getElementById('number');
+        let up = document.getElementById('increase');
+        let down = document.getElementById('decrease');
+
+        up.onclick = function (event) {
+
+            let count = number.innerText;
+            count = parseInt(count);
+            number.innerText = count + 1;
+        }
+        down.onclick = function (event) {
+            let count = number.innerText;
+            count = parseInt(count);
+            number.innerText = count - 1;
+        }
+    </script>
+
+</body>
+
+</html>
