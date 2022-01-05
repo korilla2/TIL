@@ -54,6 +54,19 @@ def delete_node(deletedata):
             return
 
 
+def find_node(finddata):
+    global head, current, pre
+    current = head
+    if head.data == finddata:
+        return current
+    while current.next is not None:
+        pre = current
+        current = current.next
+        if current.data == finddata:
+            return current
+    return Node()
+
+
 head, current, pre = None, None, None
 
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -72,3 +85,6 @@ insert_node(5, 999)
 printnode(head)
 delete_node(9)
 printnode(head)
+
+print(find_node(999).data)
+print(find_node(9).data)
