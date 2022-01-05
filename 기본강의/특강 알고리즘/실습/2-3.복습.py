@@ -37,6 +37,23 @@ def insert_node(finddata, insertdata):
     return
 
 
+def delete_node(deletedata):
+    global head, current, pre
+    if head.data == deletedata:
+        current = head
+        head = head.next
+        del current
+        return
+    current = head
+    while current.next is not None:
+        pre = current
+        current = current.next
+        if current.data == deletedata:
+            pre.next = current.next
+            del current
+            return
+
+
 head, current, pre = None, None, None
 
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -52,4 +69,6 @@ for data in my_list[1:]:
 
 printnode(head)
 insert_node(5, 999)
+printnode(head)
+delete_node(9)
 printnode(head)
