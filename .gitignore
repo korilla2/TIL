@@ -2,3 +2,6 @@
 chromedriver.exe
 **/__pycashe__
 *.pyc
+*.xls
+*.csv
+*.json
