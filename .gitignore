@@ -5,3 +5,4 @@ chromedriver.exe
 *.xls
 *.csv
 *.json
+*.xlsx
