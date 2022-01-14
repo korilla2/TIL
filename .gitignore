@@ -6,3 +6,6 @@ chromedriver.exe
 *.csv
 *.json
 *.xlsx
+!basic.csv
+!nc_soft.xlsx
+!rawdata.csv
