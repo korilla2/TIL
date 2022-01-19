@@ -10,3 +10,4 @@ chromedriver.exe
 !nc_soft.xlsx
 !rawdata.csv
 *.txt
+*.text
