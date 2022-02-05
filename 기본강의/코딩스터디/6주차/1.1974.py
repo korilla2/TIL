@@ -6,21 +6,21 @@ set 은 중복이 안되는 성질을 이용
 
 
 def check_map(arr):
-    for i in range(len(arr)):
+    for i in range(len(arr)):  # 총 줄 수
         temp = set()
-        for j in range(len(arr)):
-            temp.add(arr[i][j])
+        for j in range(len(arr)):  # 가로 한 줄
+            temp.add(arr[i][j])  # set에 집어 넣음
         if len(temp) != 9:
             return False
     return True
 
 
 def check_map2(arr):
-    for i in range(0, 3, 9):
-        for j in range(0, 3, 9):
+    for i in range(0, 3, 9):  # 맵 가로 이동 범위
+        for j in range(0, 3, 9):  # 맵 세로 이동 범위
             temp = set()
-            for k in range(3):
-                for l in range(3):
+            for k in range(3):  # 실제 검사 가로 줄
+                for l in range(3):  # 실제 검사 세로 줄
                     temp.add(arr[i + k][j + l])
             if len(temp) != 9:
                 return False
@@ -37,6 +37,7 @@ for i in range(T):
     result3 = check_map2(base)  # 부분검사
 
     if result1 == True and result2 == True and result3 == True:
+        # 전부 검사를 통과 해야만 1 출력
         print(f'#{i+1} 1')
     else:
         print(f'#{i+1} 0')
