@@ -1,0 +1,1 @@
+print(DATA_SET[seq(1, 5, 2), seq(1, 4, 2)])
