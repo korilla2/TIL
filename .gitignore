@@ -12,3 +12,4 @@ chromedriver.exe
 *.txt
 *.text
 *.zip
+*.whl
