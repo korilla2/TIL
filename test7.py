@@ -1,16 +1,11 @@
-from collections import Counter
 
-result = [[1, 3, 3], [4, 7, 6], [7, 8, 9]]
+sudoku = [list(range(1, 10)) for _ in range(9)]
+from1to9 = set(range(1, 10))
 
-print(result)
+zipSudoku = list(map(list, zip(*sudoku)))   # 세로줄을 가로줄로 반전
+for i in range(3):
+    for j in range(3):
+        if set(sudoku[i*3:(i*3)+3][0:3][j]) != from1to9 or set(zipSudoku[i*3:(i*3)+3][0:3][j]) != from1to9:
+            print(f'{i}', sudoku[i*3:(i*3)+3][0:3][j])
 
-for i in range(len(result)):
-    for j in range(len(result)):
-        print(result[i][j])
-
-b = sum(result, [])
-a = Counter(b)
-print(a)
-
-sex = a.most_common(3)
-print(sex)
+            check = 0
