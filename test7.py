@@ -1,4 +1,6 @@
 
+from tensorflow import keras
+from sklearn.model_selection import train_test_split
 sudoku = [list(range(1, 10)) for _ in range(9)]
 from1to9 = set(range(1, 10))
 
