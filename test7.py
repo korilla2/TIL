@@ -1,12 +1,7 @@
-price = [1, 2, 3, 1, 2]
 
 
-for i in price:
-    k = price.index(max(price))
-    if i < k:
-        pass
-    elif i > 2:
-        price = price[k:]
-        k = price.index(max(price))
+base = [1, 2, 3, 4, 5]
 
-    print(k)
+base2 = [6, 7, 8, 9, 10]
+
+print(base + base2[2:])
