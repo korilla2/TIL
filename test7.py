@@ -1,7 +1,15 @@
+N = int(input())
+base = list(map(int, input().split()))
+for i in range(5):
+
+    temp = base[i] - i - 1
+
+    if temp <= 0:
+        base = base.append(temp)
+        print(f'#{N}', *base)
+        break
+    base.append(temp)
 
 
-base = [1, 2, 3, 4, 5]
-
-base2 = [6, 7, 8, 9, 10]
-
-print(base + base2[2:])
+for j in range(5):
+    base.remove(base[i])
