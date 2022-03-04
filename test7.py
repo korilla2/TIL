@@ -1,3 +1,3 @@
-temp = {1: [1, 2]}
-
-print(len(temp[1]))
+import numpy as np
+a = np.zeros((1, 2000))
+print(a)
