@@ -1,28 +1,7 @@
-import keyboard
-import time
+arr = [1, 3, 5, 6, 11, 23]
 
-
-def aaa():
-    try:
-        time.sleep(2)
-        print(1/0)
-    except:
-        return
-
-    try:
-        time.sleep(10)
-        print(1/0)
-    except:
-        return
-
-
-def bbb():
-    print('b')
-
-
-keyboard.add_hotkey('q', aaa)
-keyboard.add_hotkey('w', bbb)
-
-
-while True:
-    keyboard.read_key()
+for i in range(len(arr)-1):
+    for j in range(i+1, len(arr)):
+        if arr[i] + arr[j] == 9:
+            print(arr[i], arr[j])
+            break
