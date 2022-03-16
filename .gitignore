@@ -14,4 +14,4 @@ chromedriver.exe
 *.zip
 *.whl
 스크레이핑/
-
+개인공부/scrapy
